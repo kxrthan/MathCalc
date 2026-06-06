@@ -970,7 +970,7 @@ export const formulas: Record<string, FormulaConfig> = {
       
       const res24 = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}`;
       
-      let res12H = h % 12 || 12;
+      const res12H = h % 12 || 12;
       const ampm = h >= 12 ? "PM" : "AM";
       const res12 = `${res12H}:${m.toString().padStart(2, '0')} ${ampm}`;
       
@@ -990,8 +990,8 @@ export const formulas: Record<string, FormulaConfig> = {
       const t = String(inputs.timeInput).trim().toLowerCase();
       let h = 0;
       let m = 0;
-      let isPm = t.includes("pm") || t.includes("p.m.");
-      let isAm = t.includes("am") || t.includes("a.m.");
+      const isPm = t.includes("pm") || t.includes("p.m.");
+      const isAm = t.includes("am") || t.includes("a.m.");
       
       // Extract numbers
       const match = t.match(/(\d{1,2}):?(\d{2})?/);
@@ -1009,8 +1009,8 @@ export const formulas: Record<string, FormulaConfig> = {
       
       const mil = `${h.toString().padStart(2, '0')}${m.toString().padStart(2, '0')} Hours / ${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}`;
       
-      let stH = h % 12 || 12;
-      let ampm = h >= 12 ? "PM" : "AM";
+      const stH = h % 12 || 12;
+      const ampm = h >= 12 ? "PM" : "AM";
       const std = `${stH}:${m.toString().padStart(2, '0')} ${ampm}`;
       
       return { standard: std, military: mil };

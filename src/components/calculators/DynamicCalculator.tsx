@@ -141,7 +141,7 @@ export default function DynamicCalculator({ slug }: { slug: string }) {
         const res = await fetch('https://api.currencyapi.com/v3/currencies?apikey=fca_live_Gher1ZqJkCJCnCws7BfIOADvQggxWiPraF94X7S2');
         const json = await res.json();
         const data = json.data;
-        const options = Object.entries(data).map(([code, details]: [string, any]) => ({
+        const options = Object.entries(data).map(([code, details]: [string, { name: string }]) => ({
           value: code,
           label: `${code} - ${details.name}`
         }));
@@ -161,7 +161,7 @@ export default function DynamicCalculator({ slug }: { slug: string }) {
       }
     };
     fetchCurrencies();
-  }, [config]);
+  }, [config, slug]);
 
   const handleInputChange = (id: string, value: string) => {
     setInputs(prev => ({ ...prev, [id]: value }));

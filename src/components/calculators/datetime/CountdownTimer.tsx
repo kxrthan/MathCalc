@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Play, Square, RotateCcw, Pause } from "lucide-react";
+import { Play, RotateCcw, Pause } from "lucide-react";
 
 export default function CountdownTimer() {
   const [hours, setHours] = useState(0);
@@ -179,7 +179,7 @@ export default function CountdownTimer() {
               
               {timeLeft === 0 && totalTime > 0 && !isActive && (
                 <span className="text-lg text-green-500 font-bold mt-2 animate-bounce bg-background/80 px-4 py-1 rounded-full shadow-lg border border-green-500/20 backdrop-blur-sm">
-                  Time's up!
+                  Time&apos;s up!
                 </span>
               )}
             </div>

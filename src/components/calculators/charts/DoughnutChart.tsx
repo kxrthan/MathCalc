@@ -43,7 +43,7 @@ export default function DoughnutChart({ data, title }: { data: DataItem[], title
               ))}
             </Pie>
             <Tooltip 
-              formatter={(value: any) => new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 }).format(Number(value))}
+              formatter={(value: number | string) => new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 }).format(Number(value))}
               contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
             />
             <Legend verticalAlign="bottom" height={36} iconType="circle" />

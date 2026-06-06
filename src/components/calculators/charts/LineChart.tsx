@@ -49,7 +49,7 @@ export default function LineChart({ data, series, xAxisKey = "year", title }: { 
               dx={-10}
             />
             <Tooltip
-              formatter={(value: any) => new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 }).format(Number(value))}
+              formatter={(value: number | string) => new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 }).format(Number(value))}
               contentStyle={{ borderRadius: '8px', border: '1px solid hsl(var(--border))', backgroundColor: 'hsl(var(--background))', color: 'hsl(var(--foreground))', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
             />
             <Legend verticalAlign="top" height={36} iconType="circle" wrapperStyle={{ paddingBottom: '20px' }} />
