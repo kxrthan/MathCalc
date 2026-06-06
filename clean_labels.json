@@ -1,0 +1,368 @@
+{
+  "celsius-to-fahrenheit": [
+    "&deg;F",
+    "&deg;C"
+  ],
+  "fahrenheit-to-celsius": [
+    "&deg;F",
+    "&deg;C"
+  ],
+  "absolute-difference-calculator": [
+    "x =",
+    "y ="
+  ],
+  "absolute-value-calculator": [
+    "x ="
+  ],
+  "acceleration-conversion-calculator": [
+    "From:",
+    "To:",
+    "Value to Convert"
+  ],
+  "activity-depreciation-calculator": [
+    "Asset Cost: $",
+    "Salvage Value: $"
+  ],
+  "adding-and-subtracting-fractions-calculator": [
+    "How many fractions?",
+    "Operator 1",
+    "Operator 2",
+    "Operator 3"
+  ],
+  "adding-machine-calculator": [
+    "Operation",
+    "Entry"
+  ],
+  "advanced-loan-calculator": [
+    "Choose a Calculation",
+    "Loan Amount: $",
+    "Interest Rate: %",
+    "Compounding:",
+    "Total Number",
+    "Frequency"
+  ],
+  "age-calculator": [
+    "Date Format:",
+    "Calculate:"
+  ],
+  "algebra-word-problems-age": [
+    "Alex's Age",
+    "Dana's Age",
+    "Mary's Age"
+  ],
+  "algebra-word-problems-coins": [
+    "dimes",
+    "quarters"
+  ],
+  "amortization-schedule-calculator": [
+    "Loan Amount: $",
+    "Interest Rate: %",
+    "Number of Payments:",
+    "Payment Frequency:"
+  ],
+  "angle-conversion-calculator": [
+    "From:",
+    "To:",
+    "Value to Convert"
+  ],
+  "annulus-calculator": [
+    "outer radius r1 =",
+    "inner radius r2 =",
+    "Let pi &pi; =",
+    "Units"
+  ],
+  "apr-calculator": [
+    "Loan Amount: $",
+    "Interest Rate: %",
+    "Compounding:",
+    "Number of Payments:",
+    "Payment Frequency:"
+  ],
+  "apr-calculator-basic": [
+    "Loan Amount: $",
+    "Interest Rate: %",
+    "Term in Months: #"
+  ],
+  "area-conversion-calculator": [
+    "From:",
+    "To:",
+    "Value to Convert"
+  ],
+  "aspect-ratio-calculator": [
+    "Calculate:",
+    "Units:"
+  ],
+  "average-velocity-calculator": [
+    "u&nbsp;=",
+    "v&nbsp;="
+  ],
+  "avoirdupois-weight-conversion-calculator": [
+    "From:",
+    "To:",
+    "Value to Convert"
+  ],
+  "bid-ask-calculator": [
+    "Bid Price:",
+    "Ask Price:"
+  ],
+  "bmi-calculator-body-mass-index": [
+    "Calculate BMI for",
+    "Weight:",
+    "Height:",
+    "inches"
+  ],
+  "bmi-calculator-for-women": [
+    "Weight:",
+    "Height:",
+    "inches"
+  ],
+  "bingo-number-generator": [
+    "1 to 75",
+    "1 to 90"
+  ],
+  "bingo-card-generator": [
+    "Card Color:"
+  ],
+  "cagr-calculator": [
+    "Beginning Value (BV): $",
+    "Final Value (FV): $",
+    "No. of Periods (t):"
+  ],
+  "capsule-calculator": [
+    "radius r =",
+    "side length a =",
+    "Let pi &pi; =",
+    "Units"
+  ],
+  "car-loan-calculator": [
+    "Loan Amount: $",
+    "Loan Term: #",
+    "Interest Rate: %"
+  ],
+  "car-loan-payment-calculator": [
+    "Car Price: $",
+    "Sales Tax: %",
+    "Down Payment: $",
+    "Trade-In Value: $",
+    "Loan Term: #",
+    "Interest Rate: %"
+  ],
+  "cd-calculator": [
+    "Initial Investment: $",
+    "Term (months): #",
+    "Interest Rate: %",
+    "Compounding:"
+  ],
+  "checkbook-balance-calculator": [
+    "Checkbook Balance: $",
+    "Statement Balance: $",
+    "Up to How Many Drafts?",
+    "Up to How Many Deposits?",
+    "Open in Print Friendly Page"
+  ],
+  "checkbook-calculator": [
+    "Operation",
+    "Entry"
+  ],
+  "numbers-to-words-converter": [
+    "Convert this Number:",
+    "Words",
+    "Currency",
+    "Check Writing",
+    "Letter Case:"
+  ],
+  "circle-calculator": [
+    "radius r =",
+    "Let pi &pi; =",
+    "Units"
+  ],
+  "circular-cylinder-calculator": [
+    "radius r =",
+    "height h =",
+    "Let pi &pi; =",
+    "Units"
+  ],
+  "circular-permutation-calculator": [
+    "n ="
+  ],
+  "combination-with-replacement-calculator": [
+    "n (objects) =",
+    "r (sample) ="
+  ],
+  "combinations-calculator-ncr": [
+    "n (objects) =",
+    "r (sample) ="
+  ],
+  "completing-the-square-calculator": [
+    "a =",
+    "b =",
+    "c ="
+  ],
+  "compound-interest-calculator": [
+    "Calculate:",
+    "Principal (P): $",
+    "Annual Rate (R): %",
+    "Compound (n):",
+    "Compounding"
+  ],
+  "computer-storage-units-conversion-calculator": [
+    "From:",
+    "To:",
+    "Value to Convert"
+  ],
+  "conception-calculator": [
+    "Calculate Using:"
+  ],
+  "concrete-volume-calculator": [
+    "Calculate for",
+    "Depth =",
+    "Length =",
+    "Width =",
+    "Quantity =",
+    "currency",
+    "price",
+    "per cubic"
+  ],
+  "cone-calculator": [
+    "radius r =",
+    "height h =",
+    "Let pi &pi; =",
+    "Units"
+  ],
+  "conical-frustum-calculator": [
+    "radius r1 =",
+    "radius r2 =",
+    "height h =",
+    "Let pi &pi; =",
+    "Units"
+  ],
+  "cooking-conversion-calculators": [
+    "Convert",
+    "From:",
+    "To:",
+    "Value to Convert"
+  ],
+  "countdown-timer": [
+    "Event Name:",
+    "12 hour clock",
+    "24 hour clock",
+    "Event Time:",
+    "Display Countdown in Wide Format"
+  ],
+  "cube-calculator": [
+    "side length a =",
+    "Units"
+  ],
+  "cube-calculator-x": [
+    "side length a =",
+    "Units"
+  ],
+  "cube-root-calculator": [
+    "x ="
+  ],
+  "cubic-yards-calculator": [
+    "Enter area or dimensions:",
+    "Depth =",
+    "Length =",
+    "Width =",
+    "Quantity =",
+    "currency",
+    "price",
+    "per cubic"
+  ],
+  "cubic-feet-calculator": [
+    "Height h =",
+    "Width w =",
+    "Length l =",
+    "Quantity =",
+    "currency",
+    "price",
+    "per",
+    "Unit"
+  ],
+  "currency-converter": [
+    "From:",
+    "To:",
+    "Value to Convert"
+  ],
+  "date-days-calculator": [
+    "Date Format:",
+    "Date",
+    "Days",
+    "Business Days Only",
+    "Saturday is also a Business Day"
+  ],
+  "date-difference-calculator": [
+    "Date Format:",
+    "Count Business Days Only",
+    "Saturday is a Business Day"
+  ],
+  "date-calendar-units-calculator": [
+    "Date Format:"
+  ],
+  "decimal-degrees-to-degrees-minutes-seconds": [
+    "Enter:",
+    "Decimal Degrees (DD)"
+  ],
+  "decimal-to-fraction-calculator": [
+    "Enter a Decimal Number:"
+  ],
+  "decimal-to-percent-calculator": [
+    "Enter a Decimal Number:"
+  ],
+  "decimal-to-time-calculator": [
+    "show hundredths of seconds"
+  ],
+  "declining-balance-depreciation-calculator": [
+    "Asset Cost: $",
+    "Salvage Value: $",
+    "Useful Life (years):",
+    "Depreciation Factor:",
+    "Month:",
+    "Year:",
+    "Convention:",
+    "Show:"
+  ],
+  "deferred-fixed-annuity-calculator": [
+    "Initial Investment: $",
+    "Term in Years:",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "Compounding",
+    "Investment is Pre-tax:",
+    "Tax Bracket:"
+  ],
+  "density-physics": [
+    "V&nbsp;="
+  ],
+  "density-conversion-calculator": [
+    "From:",
+    "To:",
+    "Value to Convert"
+  ],
+  "depreciation-calculator": [
+    "Asset cost: $",
+    "Salvage value: $",
+    "Useful life (years):",
+    "Month:",
+    "Year:",
+    "Convention:",
+    "Show:"
+  ],
+  "descriptive-statistics-calculator": [
+    "Sample",
+    "Population"
+  ],
+  "dice-roller": [
+    "Number of Dice:"
+  ],
+  "difference-of-two-squares-calculator": [
+    "Enter an Equation:"
+  ],
+  "digital-stopwatch-timer": [
+    "mm:ss.s"
+  ]
+}

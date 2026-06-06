@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "angle-conversion-calculator",
+    "error": "Output contained NaN or null: res",
+    "inputsUsed": {
+      "val": 180,
+      "input": "radian",
+      "output": "radian"
+    },
+    "rawOutput": {
+      "res": null
+    }
+  }
+]

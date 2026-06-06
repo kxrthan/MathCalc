@@ -1,0 +1,2561 @@
+{
+  "celsius-to-fahrenheit": [
+    {
+      "id": "input",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "&deg;F",
+      "type": "number"
+    },
+    {
+      "id": "input_value_f",
+      "label": "&deg;C",
+      "type": "number"
+    },
+    {
+      "id": "input_value_c",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "fahrenheit-to-celsius": [
+    {
+      "id": "input",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "&deg;F",
+      "type": "number"
+    },
+    {
+      "id": "input_value_f",
+      "label": "&deg;C",
+      "type": "number"
+    },
+    {
+      "id": "input_value_c",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "margin-calculator": [
+    {
+      "id": "val_1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "val_2",
+      "label": "decimal places:",
+      "type": "number"
+    },
+    {
+      "id": "addTax",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "taxPercent",
+      "label": "taxPercent",
+      "type": "number"
+    },
+    {
+      "id": "currency",
+      "label": "currency",
+      "type": "number"
+    },
+    {
+      "id": "var_1",
+      "label": "var_1",
+      "type": "number"
+    },
+    {
+      "id": "var_2",
+      "label": "var_2",
+      "type": "number"
+    },
+    {
+      "id": "round_to",
+      "label": "round_to",
+      "type": "number"
+    }
+  ],
+  "1000-prime-numbers": [],
+  "absolute-difference-calculator": [
+    {
+      "id": "operand_1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "operand_2",
+      "label": "x =",
+      "type": "number"
+    }
+  ],
+  "absolute-value-calculator": [
+    {
+      "id": "operand",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "acceleration-conversion-calculator": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "From:",
+      "type": "number"
+    },
+    {
+      "id": "output",
+      "label": "To:",
+      "type": "number"
+    }
+  ],
+  "acres-to-square-feet": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "activity-depreciation-calculator": [
+    {
+      "id": "cost",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "salvage",
+      "label": "Asset Cost: $",
+      "type": "number"
+    },
+    {
+      "id": "life",
+      "label": "Salvage Value: $",
+      "type": "number"
+    },
+    {
+      "id": "units",
+      "label": "Round Decimal:",
+      "type": "number"
+    },
+    {
+      "id": "decimal",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "adding-and-subtracting-fractions-calculator": [
+    {
+      "id": "n[1][input]",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "d[1][input]",
+      "label": "How many fractions?",
+      "type": "number"
+    },
+    {
+      "id": "n[2][input]",
+      "label": "Operator 1",
+      "type": "number"
+    },
+    {
+      "id": "d[2][input]",
+      "label": "Operator 2",
+      "type": "number"
+    },
+    {
+      "id": "n[3][input]",
+      "label": "Operator 3",
+      "type": "number"
+    },
+    {
+      "id": "d[3][input]",
+      "label": "d[3][input]",
+      "type": "number"
+    },
+    {
+      "id": "n[4][input]",
+      "label": "n[4][input]",
+      "type": "number"
+    },
+    {
+      "id": "d[4][input]",
+      "label": "d[4][input]",
+      "type": "number"
+    },
+    {
+      "id": "num_operands_last",
+      "label": "num_operands_last",
+      "type": "number"
+    },
+    {
+      "id": "num_operands",
+      "label": "num_operands",
+      "type": "number"
+    },
+    {
+      "id": "operator[2][input]",
+      "label": "operator[2][input]",
+      "type": "number"
+    },
+    {
+      "id": "operator[3][input]",
+      "label": "operator[3][input]",
+      "type": "number"
+    },
+    {
+      "id": "operator[4][input]",
+      "label": "operator[4][input]",
+      "type": "number"
+    }
+  ],
+  "adding-and-subtracting-integers": [
+    {
+      "id": "x",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "adding-machine-calculator": [
+    {
+      "id": "answer",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "operand",
+      "label": "Operation",
+      "type": "number"
+    },
+    {
+      "id": "count",
+      "label": "Entry",
+      "type": "number"
+    },
+    {
+      "id": "count",
+      "label": "count",
+      "type": "number"
+    },
+    {
+      "id": "answer",
+      "label": "answer",
+      "type": "number"
+    },
+    {
+      "id": "count",
+      "label": "count",
+      "type": "number"
+    },
+    {
+      "id": "answer",
+      "label": "answer",
+      "type": "number"
+    },
+    {
+      "id": "Print",
+      "label": "Print",
+      "type": "number"
+    },
+    {
+      "id": "operator",
+      "label": "operator",
+      "type": "number"
+    }
+  ],
+  "advanced-loan-calculator": [
+    {
+      "id": "pv",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "ratepercent",
+      "label": "Choose a Calculation",
+      "type": "number"
+    },
+    {
+      "id": "nper",
+      "label": "Loan Amount: $",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Interest Rate: %",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Compounding:",
+      "type": "number"
+    },
+    {
+      "id": "m",
+      "label": "Total Number",
+      "type": "number"
+    },
+    {
+      "id": "q",
+      "label": "Frequency",
+      "type": "number"
+    }
+  ],
+  "age-calculator": [
+    {
+      "id": "mo_0",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "dy_0",
+      "label": "Date Format:",
+      "type": "number"
+    },
+    {
+      "id": "yr_0",
+      "label": "Calculate:",
+      "type": "number"
+    },
+    {
+      "id": "mo_1",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "dy_1",
+      "label": "dy_1",
+      "type": "number"
+    },
+    {
+      "id": "yr_1",
+      "label": "yr_1",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "given_data_last",
+      "type": "number"
+    },
+    {
+      "id": "date_format_last",
+      "label": "date_format_last",
+      "type": "number"
+    },
+    {
+      "id": "date_format",
+      "label": "date_format",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "given_data",
+      "type": "number"
+    }
+  ],
+  "age-checker": [
+    {
+      "id": "min_1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "min_2",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "min_3",
+      "label": "min_3",
+      "type": "number"
+    }
+  ],
+  "algebra-calculators": [],
+  "algebra-word-problems-age": [
+    {
+      "id": "person[1]",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "age[1]",
+      "label": "Dana's Age",
+      "type": "number"
+    },
+    {
+      "id": "person[2]",
+      "label": "Chris's Age",
+      "type": "number"
+    },
+    {
+      "id": "age[2]",
+      "label": "Sam's Age",
+      "type": "number"
+    },
+    {
+      "id": "person[3]",
+      "label": "person[3]",
+      "type": "number"
+    },
+    {
+      "id": "age[3]",
+      "label": "age[3]",
+      "type": "number"
+    },
+    {
+      "id": "diff[1]",
+      "label": "diff[1]",
+      "type": "number"
+    },
+    {
+      "id": "time[1]",
+      "label": "time[1]",
+      "type": "number"
+    },
+    {
+      "id": "hi_lo[1]",
+      "label": "hi_lo[1]",
+      "type": "number"
+    },
+    {
+      "id": "diff[2]",
+      "label": "diff[2]",
+      "type": "number"
+    },
+    {
+      "id": "time[2]",
+      "label": "time[2]",
+      "type": "number"
+    },
+    {
+      "id": "hi_lo[2]",
+      "label": "hi_lo[2]",
+      "type": "number"
+    },
+    {
+      "id": "sum_ages",
+      "label": "sum_ages",
+      "type": "number"
+    },
+    {
+      "id": "guessed[1]",
+      "label": "guessed[1]",
+      "type": "number"
+    },
+    {
+      "id": "guessed[2]",
+      "label": "guessed[2]",
+      "type": "number"
+    },
+    {
+      "id": "guessed[3]",
+      "label": "guessed[3]",
+      "type": "number"
+    }
+  ],
+  "algebra-word-problems-coins": [
+    {
+      "id": "num[1]",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "value[1]",
+      "label": "half dollars",
+      "type": "number"
+    },
+    {
+      "id": "coin[1]",
+      "label": "pennies",
+      "type": "number"
+    },
+    {
+      "id": "num[2]",
+      "label": "num[2]",
+      "type": "number"
+    },
+    {
+      "id": "value[2]",
+      "label": "value[2]",
+      "type": "number"
+    },
+    {
+      "id": "coin[2]",
+      "label": "coin[2]",
+      "type": "number"
+    },
+    {
+      "id": "total_money",
+      "label": "total_money",
+      "type": "number"
+    },
+    {
+      "id": "total_coins",
+      "label": "total_coins",
+      "type": "number"
+    },
+    {
+      "id": "guessed[1]",
+      "label": "guessed[1]",
+      "type": "number"
+    },
+    {
+      "id": "guessed[2]",
+      "label": "guessed[2]",
+      "type": "number"
+    }
+  ],
+  "amortization-schedule-calculator": [
+    {
+      "id": "ipv",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "irate",
+      "label": "Loan Amount: $",
+      "type": "number"
+    },
+    {
+      "id": "inper",
+      "label": "Interest Rate: %",
+      "type": "number"
+    },
+    {
+      "id": "iper",
+      "label": "Number of Payments:",
+      "type": "number"
+    }
+  ],
+  "angle-conversion-calculator": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "From:",
+      "type": "number"
+    },
+    {
+      "id": "output",
+      "label": "To:",
+      "type": "number"
+    }
+  ],
+  "annulus-calculator": [
+    {
+      "id": "r1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "r2",
+      "label": "outer radius r1 =",
+      "type": "number"
+    },
+    {
+      "id": "pi",
+      "label": "inner radius r2 =",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Let pi &pi; =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Units",
+      "type": "number"
+    },
+    {
+      "id": "units_length",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "apr-calculator": [
+    {
+      "id": "pv",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "ratepercent",
+      "label": "Loan Amount: $",
+      "type": "number"
+    },
+    {
+      "id": "n",
+      "label": "Interest Rate: %",
+      "type": "number"
+    },
+    {
+      "id": "add0",
+      "label": "Compounding:",
+      "type": "number"
+    },
+    {
+      "id": "add1",
+      "label": "Number of Payments:",
+      "type": "number"
+    },
+    {
+      "id": "add2",
+      "label": "Payment Frequency:",
+      "type": "number"
+    },
+    {
+      "id": "m",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "q",
+      "label": "q",
+      "type": "number"
+    }
+  ],
+  "apr-calculator-basic": [
+    {
+      "id": "pv",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "ratepercent",
+      "label": "Loan Amount: $",
+      "type": "number"
+    },
+    {
+      "id": "n",
+      "label": "Interest Rate: %",
+      "type": "number"
+    },
+    {
+      "id": "add1",
+      "label": "Term in Months: #",
+      "type": "number"
+    }
+  ],
+  "area-conversion-calculator": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "From:",
+      "type": "number"
+    },
+    {
+      "id": "output",
+      "label": "To:",
+      "type": "number"
+    }
+  ],
+  "aspect-ratio-calculator": [
+    {
+      "id": "b",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "a",
+      "label": "Calculate:",
+      "type": "number"
+    },
+    {
+      "id": "compare_last",
+      "label": "Units:",
+      "type": "number"
+    },
+    {
+      "id": "last",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "given_data",
+      "type": "number"
+    },
+    {
+      "id": "units_length",
+      "label": "units_length",
+      "type": "number"
+    }
+  ],
+  "average-calculator-mean": [],
+  "average-velocity-calculator": [
+    {
+      "id": "v0",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "vf",
+      "label": "u&nbsp;=",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "v&nbsp;=",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "va_units",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "v0_units",
+      "label": "v0_units",
+      "type": "number"
+    },
+    {
+      "id": "vf_units",
+      "label": "vf_units",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "sf",
+      "type": "number"
+    }
+  ],
+  "avoirdupois-weight-conversion-calculator": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "From:",
+      "type": "number"
+    },
+    {
+      "id": "output",
+      "label": "To:",
+      "type": "number"
+    }
+  ],
+  "basic-calculator": [
+    {
+      "id": "cs_display",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "cs_memory_val",
+      "label": "cs_memory_val",
+      "type": "number"
+    }
+  ],
+  "bid-ask-calculator": [
+    {
+      "id": "bid",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "ask",
+      "label": "Bid Price:",
+      "type": "number"
+    }
+  ],
+  "bmi-calculator-body-mass-index": [
+    {
+      "id": "weight",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "height",
+      "label": "Calculate BMI for",
+      "type": "number"
+    },
+    {
+      "id": "height_unit2",
+      "label": "Weight:",
+      "type": "number"
+    },
+    {
+      "id": "height2",
+      "label": "Height:",
+      "type": "number"
+    },
+    {
+      "id": "weight_unit_last",
+      "label": "inches",
+      "type": "number"
+    },
+    {
+      "id": "height_unit_last",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "given_data_last",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "given_data",
+      "type": "number"
+    },
+    {
+      "id": "weight_unit",
+      "label": "weight_unit",
+      "type": "number"
+    },
+    {
+      "id": "height_unit",
+      "label": "height_unit",
+      "type": "number"
+    }
+  ],
+  "bmi-calculator-for-women": [
+    {
+      "id": "weight",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "height",
+      "label": "Weight:",
+      "type": "number"
+    },
+    {
+      "id": "height_unit2",
+      "label": "Height:",
+      "type": "number"
+    },
+    {
+      "id": "height2",
+      "label": "inches",
+      "type": "number"
+    },
+    {
+      "id": "weight_unit_last",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "height_unit_last",
+      "label": "height_unit_last",
+      "type": "number"
+    },
+    {
+      "id": "weight_unit",
+      "label": "weight_unit",
+      "type": "number"
+    },
+    {
+      "id": "height_unit",
+      "label": "height_unit",
+      "type": "number"
+    }
+  ],
+  "bingo-number-generator": [
+    {
+      "id": "balls",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "pick",
+      "label": "1 to 75",
+      "type": "number"
+    },
+    {
+      "id": "pool",
+      "label": "1 to 90",
+      "type": "number"
+    },
+    {
+      "id": "pool",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "play",
+      "label": "play",
+      "type": "number"
+    },
+    {
+      "id": "play",
+      "label": "play",
+      "type": "number"
+    }
+  ],
+  "bingo-card-generator": [
+    {
+      "id": "B2",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "I2",
+      "label": "Card Color:",
+      "type": "number"
+    },
+    {
+      "id": "N2",
+      "label": "N2",
+      "type": "number"
+    },
+    {
+      "id": "G2",
+      "label": "G2",
+      "type": "number"
+    },
+    {
+      "id": "O2",
+      "label": "O2",
+      "type": "number"
+    },
+    {
+      "id": "pick",
+      "label": "pick",
+      "type": "number"
+    },
+    {
+      "id": "play",
+      "label": "play",
+      "type": "number"
+    },
+    {
+      "id": "play",
+      "label": "play",
+      "type": "number"
+    },
+    {
+      "id": "color_board",
+      "label": "color_board",
+      "type": "number"
+    }
+  ],
+  "cagr-calculator": [
+    {
+      "id": "v_1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "v_2",
+      "label": "Beginning Value (BV): $",
+      "type": "number"
+    },
+    {
+      "id": "nper",
+      "label": "Final Value (FV): $",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "No. of Periods (t):",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "q",
+      "label": "q",
+      "type": "number"
+    }
+  ],
+  "capsule-calculator": [
+    {
+      "id": "r",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "a",
+      "label": "radius r =",
+      "type": "number"
+    },
+    {
+      "id": "pi",
+      "label": "side length a =",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Let pi &pi; =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Units",
+      "type": "number"
+    },
+    {
+      "id": "units_length",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "car-loan-calculator": [
+    {
+      "id": "pv",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "term",
+      "label": "Loan Amount: $",
+      "type": "number"
+    },
+    {
+      "id": "ratepercent",
+      "label": "Loan Term: #",
+      "type": "number"
+    },
+    {
+      "id": "term_unit",
+      "label": "Interest Rate: %",
+      "type": "number"
+    }
+  ],
+  "car-loan-payment-calculator": [
+    {
+      "id": "price",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "taxpercent",
+      "label": "Car Price: $",
+      "type": "number"
+    },
+    {
+      "id": "down_pmt",
+      "label": "Sales Tax: %",
+      "type": "number"
+    },
+    {
+      "id": "trade_in",
+      "label": "Down Payment: $",
+      "type": "number"
+    },
+    {
+      "id": "term",
+      "label": "Trade-In Value: $",
+      "type": "number"
+    },
+    {
+      "id": "ratepercent",
+      "label": "Loan Term: #",
+      "type": "number"
+    },
+    {
+      "id": "term_unit",
+      "label": "Interest Rate: %",
+      "type": "number"
+    }
+  ],
+  "cd-calculator": [
+    {
+      "id": "principal",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "t",
+      "label": "Initial Investment: $",
+      "type": "number"
+    },
+    {
+      "id": "ratepercent",
+      "label": "Term (months): #",
+      "type": "number"
+    },
+    {
+      "id": "n",
+      "label": "Interest Rate: %",
+      "type": "number"
+    }
+  ],
+  "celsius-to-kelvin": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "celsius-to-rankine": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "centimeters-to-inches": [
+    {
+      "id": "cm",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "d",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "character-counter": [],
+  "checkbook-balance-calculator": [
+    {
+      "id": "checkbook_balance",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "statement_balance",
+      "label": "Checkbook Balance: $",
+      "type": "number"
+    },
+    {
+      "id": "service",
+      "label": "Statement Balance: $",
+      "type": "number"
+    },
+    {
+      "id": "interest",
+      "label": "Up to How Many Drafts?",
+      "type": "number"
+    },
+    {
+      "id": "draft[1]",
+      "label": "Up to How Many Deposits?",
+      "type": "number"
+    },
+    {
+      "id": "draft[2]",
+      "label": "Open in Print Friendly Page",
+      "type": "number"
+    },
+    {
+      "id": "draft[3]",
+      "label": "draft[3]",
+      "type": "number"
+    },
+    {
+      "id": "draft[4]",
+      "label": "draft[4]",
+      "type": "number"
+    },
+    {
+      "id": "draft[5]",
+      "label": "draft[5]",
+      "type": "number"
+    },
+    {
+      "id": "deposit[1]",
+      "label": "deposit[1]",
+      "type": "number"
+    },
+    {
+      "id": "deposit[2]",
+      "label": "deposit[2]",
+      "type": "number"
+    },
+    {
+      "id": "deposit[3]",
+      "label": "deposit[3]",
+      "type": "number"
+    },
+    {
+      "id": "deposit[4]",
+      "label": "deposit[4]",
+      "type": "number"
+    },
+    {
+      "id": "deposit[5]",
+      "label": "deposit[5]",
+      "type": "number"
+    },
+    {
+      "id": "printTable",
+      "label": "printTable",
+      "type": "number"
+    },
+    {
+      "id": "nDrafts",
+      "label": "nDrafts",
+      "type": "number"
+    },
+    {
+      "id": "nDeposits",
+      "label": "nDeposits",
+      "type": "number"
+    }
+  ],
+  "checkbook-calculator": [
+    {
+      "id": "answer",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "operand",
+      "label": "Operation",
+      "type": "number"
+    },
+    {
+      "id": "count",
+      "label": "Entry",
+      "type": "number"
+    },
+    {
+      "id": "operator",
+      "label": "operator",
+      "type": "number"
+    }
+  ],
+  "numbers-to-words-converter": [
+    {
+      "id": "number",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "format",
+      "label": "Convert this Number:",
+      "type": "number"
+    },
+    {
+      "id": "format",
+      "label": "Words",
+      "type": "number"
+    },
+    {
+      "id": "format",
+      "label": "Currency",
+      "type": "number"
+    },
+    {
+      "id": "currency",
+      "label": "Check Writing",
+      "type": "number"
+    },
+    {
+      "id": "checks",
+      "label": "Letter Case:",
+      "type": "number"
+    },
+    {
+      "id": "adverb",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "letter_case",
+      "label": "letter_case",
+      "type": "number"
+    }
+  ],
+  "circle-calculator": [
+    {
+      "id": "r",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "pi",
+      "label": "radius r =",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Let pi &pi; =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Units",
+      "type": "number"
+    },
+    {
+      "id": "units_length",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "circular-cylinder-calculator": [
+    {
+      "id": "r",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "h",
+      "label": "radius r =",
+      "type": "number"
+    },
+    {
+      "id": "pi",
+      "label": "height h =",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Let pi &pi; =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Units",
+      "type": "number"
+    },
+    {
+      "id": "units_length",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "circular-permutation-calculator": [
+    {
+      "id": "n",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "coin-flipper": [
+    {
+      "id": "flips",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "pick",
+      "label": "pick",
+      "type": "number"
+    },
+    {
+      "id": "num_flips",
+      "label": "num_flips",
+      "type": "number"
+    }
+  ],
+  "combination-with-replacement-calculator": [
+    {
+      "id": "n",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "r",
+      "label": "n (objects) =",
+      "type": "number"
+    }
+  ],
+  "combinations-calculator-ncr": [
+    {
+      "id": "n",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "r",
+      "label": "n (objects) =",
+      "type": "number"
+    }
+  ],
+  "common-factor-calculator": [
+    {
+      "id": "input",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "comparing-fractions-calculator": [
+    {
+      "id": "operand_1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "operand_2",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "completing-the-square-calculator": [
+    {
+      "id": "a",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "b",
+      "label": "a =",
+      "type": "number"
+    },
+    {
+      "id": "c",
+      "label": "b =",
+      "type": "number"
+    }
+  ],
+  "compound-interest-calculator": [
+    {
+      "id": "P",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "R",
+      "label": "Calculate:",
+      "type": "number"
+    },
+    {
+      "id": "t",
+      "label": "Principal (P): $",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Annual Rate (R): %",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Compound (n):",
+      "type": "number"
+    },
+    {
+      "id": "n",
+      "label": "Compounding",
+      "type": "number"
+    }
+  ],
+  "complex-fraction-calculator": [
+    {
+      "id": "n_1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "d_1",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "n_2",
+      "label": "n_2",
+      "type": "number"
+    },
+    {
+      "id": "d_2",
+      "label": "d_2",
+      "type": "number"
+    },
+    {
+      "id": "operator",
+      "label": "operator",
+      "type": "number"
+    }
+  ],
+  "computer-storage-units-conversion-calculator": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "From:",
+      "type": "number"
+    },
+    {
+      "id": "output",
+      "label": "To:",
+      "type": "number"
+    }
+  ],
+  "conception-calculator": [
+    {
+      "id": "eventDate",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "date_entered",
+      "label": "Calculate Using:",
+      "type": "number"
+    },
+    {
+      "id": "eventDate",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "date_entered",
+      "label": "date_entered",
+      "type": "number"
+    }
+  ],
+  "concrete-volume-calculator": [
+    {
+      "id": "height",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "length",
+      "label": "Calculate for",
+      "type": "number"
+    },
+    {
+      "id": "width",
+      "label": "Depth =",
+      "type": "number"
+    },
+    {
+      "id": "qty",
+      "label": "Length =",
+      "type": "number"
+    },
+    {
+      "id": "price",
+      "label": "Width =",
+      "type": "number"
+    },
+    {
+      "id": "last",
+      "label": "Quantity =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "currency",
+      "type": "number"
+    },
+    {
+      "id": "height_unit",
+      "label": "price",
+      "type": "number"
+    },
+    {
+      "id": "length_unit",
+      "label": "per cubic",
+      "type": "number"
+    },
+    {
+      "id": "width_unit",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "cur_code",
+      "label": "cur_code",
+      "type": "number"
+    },
+    {
+      "id": "price_unit",
+      "label": "price_unit",
+      "type": "number"
+    }
+  ],
+  "cone-calculator": [
+    {
+      "id": "r",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "h",
+      "label": "radius r =",
+      "type": "number"
+    },
+    {
+      "id": "pi",
+      "label": "height h =",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Let pi &pi; =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Units",
+      "type": "number"
+    },
+    {
+      "id": "units_length",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "conical-frustum-calculator": [
+    {
+      "id": "r1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "r2",
+      "label": "radius r1 =",
+      "type": "number"
+    },
+    {
+      "id": "h",
+      "label": "radius r2 =",
+      "type": "number"
+    },
+    {
+      "id": "pi",
+      "label": "height h =",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Let pi &pi; =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Units",
+      "type": "number"
+    },
+    {
+      "id": "units_length",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "cooking-conversion-calculators": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "last",
+      "label": "Convert",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "From:",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "To:",
+      "type": "number"
+    },
+    {
+      "id": "output",
+      "label": "Value to Convert",
+      "type": "number"
+    }
+  ],
+  "countdown-timer": [
+    {
+      "id": "eventName",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "clock",
+      "label": "Event Name:",
+      "type": "number"
+    },
+    {
+      "id": "clock",
+      "label": "12 hour clock",
+      "type": "number"
+    },
+    {
+      "id": "t_1",
+      "label": "24 hour clock",
+      "type": "number"
+    },
+    {
+      "id": "wideFormat",
+      "label": "Event Time:",
+      "type": "number"
+    },
+    {
+      "id": "clock_last",
+      "label": "Display Countdown in Wide Format",
+      "type": "number"
+    },
+    {
+      "id": "m_1",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "cube-calculator": [
+    {
+      "id": "a",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "side length a =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Units",
+      "type": "number"
+    },
+    {
+      "id": "units_length",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "cube-calculator-x": [
+    {
+      "id": "a",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "side length a =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Units",
+      "type": "number"
+    },
+    {
+      "id": "units_length",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "cube-root-calculator": [
+    {
+      "id": "radicand",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "cubic-yards-calculator": [
+    {
+      "id": "depth",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "length",
+      "label": "Enter area or dimensions:",
+      "type": "number"
+    },
+    {
+      "id": "width",
+      "label": "Depth =",
+      "type": "number"
+    },
+    {
+      "id": "qty",
+      "label": "Length =",
+      "type": "number"
+    },
+    {
+      "id": "price",
+      "label": "Width =",
+      "type": "number"
+    },
+    {
+      "id": "last",
+      "label": "Quantity =",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "currency",
+      "type": "number"
+    },
+    {
+      "id": "depth_unit",
+      "label": "price",
+      "type": "number"
+    },
+    {
+      "id": "length_unit",
+      "label": "per cubic",
+      "type": "number"
+    },
+    {
+      "id": "width_unit",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "cur_code",
+      "label": "cur_code",
+      "type": "number"
+    },
+    {
+      "id": "price_unit",
+      "label": "price_unit",
+      "type": "number"
+    }
+  ],
+  "cubic-feet-calculator": [
+    {
+      "id": "h",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "w",
+      "label": "Height h =",
+      "type": "number"
+    },
+    {
+      "id": "l",
+      "label": "Width w =",
+      "type": "number"
+    },
+    {
+      "id": "qty",
+      "label": "Length l =",
+      "type": "number"
+    },
+    {
+      "id": "price",
+      "label": "Quantity =",
+      "type": "number"
+    },
+    {
+      "id": "per_unit",
+      "label": "currency",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "price",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "per",
+      "type": "number"
+    },
+    {
+      "id": "h_unit",
+      "label": "Unit",
+      "type": "number"
+    },
+    {
+      "id": "w_unit",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "l_unit",
+      "label": "l_unit",
+      "type": "number"
+    },
+    {
+      "id": "cur_code",
+      "label": "cur_code",
+      "type": "number"
+    },
+    {
+      "id": "price_unit",
+      "label": "price_unit",
+      "type": "number"
+    }
+  ],
+  "cubic-feet-to-cubic-yards": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "cubic-yards-to-cubic-feet": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "currency-appreciation-and-depreciation-calculator": [
+    {
+      "id": "e1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "e2",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "input",
+      "type": "number"
+    },
+    {
+      "id": "output",
+      "label": "output",
+      "type": "number"
+    }
+  ],
+  "currency-converter": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "From:",
+      "type": "number"
+    },
+    {
+      "id": "output",
+      "label": "To:",
+      "type": "number"
+    }
+  ],
+  "date-days-calculator": [
+    {
+      "id": "dateInputM",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "dateInputD",
+      "label": "Date Format:",
+      "type": "number"
+    },
+    {
+      "id": "dateInputY",
+      "label": "Date",
+      "type": "number"
+    },
+    {
+      "id": "days",
+      "label": "Days",
+      "type": "number"
+    },
+    {
+      "id": "business",
+      "label": "Business Days Only",
+      "type": "number"
+    },
+    {
+      "id": "business_days_6",
+      "label": "Saturday is also a Business Day",
+      "type": "number"
+    },
+    {
+      "id": "given_format_last",
+      "label": "given_format_last",
+      "type": "number"
+    },
+    {
+      "id": "given_format",
+      "label": "given_format",
+      "type": "number"
+    },
+    {
+      "id": "operator",
+      "label": "operator",
+      "type": "number"
+    }
+  ],
+  "date-difference-calculator": [
+    {
+      "id": "d_0",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "d_1",
+      "label": "Date Format:",
+      "type": "number"
+    },
+    {
+      "id": "business",
+      "label": "Count Business Days Only",
+      "type": "number"
+    },
+    {
+      "id": "business_days_6",
+      "label": "Saturday is a Business Day",
+      "type": "number"
+    },
+    {
+      "id": "given_format_last",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "given_format",
+      "label": "given_format",
+      "type": "number"
+    }
+  ],
+  "date-calendar-units-calculator": [
+    {
+      "id": "dateInput",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "units",
+      "label": "Date Format:",
+      "type": "number"
+    },
+    {
+      "id": "given_format_last",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "given_format",
+      "label": "given_format",
+      "type": "number"
+    },
+    {
+      "id": "operator",
+      "label": "operator",
+      "type": "number"
+    },
+    {
+      "id": "calendar_units",
+      "label": "calendar_units",
+      "type": "number"
+    }
+  ],
+  "debt-ratios-calculator": [
+    {
+      "id": "cl1",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "cl2",
+      "label": "Significant Figures:",
+      "type": "number"
+    },
+    {
+      "id": "ll1",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "ll2",
+      "label": "ll2",
+      "type": "number"
+    },
+    {
+      "id": "ca1",
+      "label": "ca1",
+      "type": "number"
+    },
+    {
+      "id": "ca2",
+      "label": "ca2",
+      "type": "number"
+    },
+    {
+      "id": "la1",
+      "label": "la1",
+      "type": "number"
+    },
+    {
+      "id": "la2",
+      "label": "la2",
+      "type": "number"
+    },
+    {
+      "id": "eq1",
+      "label": "eq1",
+      "type": "number"
+    },
+    {
+      "id": "eq2",
+      "label": "eq2",
+      "type": "number"
+    },
+    {
+      "id": "netinc1",
+      "label": "netinc1",
+      "type": "number"
+    },
+    {
+      "id": "netinc2",
+      "label": "netinc2",
+      "type": "number"
+    },
+    {
+      "id": "int1",
+      "label": "int1",
+      "type": "number"
+    },
+    {
+      "id": "int2",
+      "label": "int2",
+      "type": "number"
+    },
+    {
+      "id": "irs1",
+      "label": "irs1",
+      "type": "number"
+    },
+    {
+      "id": "irs2",
+      "label": "irs2",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "sf",
+      "type": "number"
+    }
+  ],
+  "decimal-degrees-to-degrees-minutes-seconds": [
+    {
+      "id": "decimal",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Enter:",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Decimal Degrees (DD)",
+      "type": "number"
+    }
+  ],
+  "decimal-to-fraction-calculator": [
+    {
+      "id": "x",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "r",
+      "label": "Enter a Decimal Number:",
+      "type": "number"
+    },
+    {
+      "id": "round_denom",
+      "label": "Round to the nearest fraction",
+      "type": "number"
+    }
+  ],
+  "decimal-to-percent-calculator": [
+    {
+      "id": "x",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "decimal-to-time-calculator": [
+    {
+      "id": "decimal",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "hundredths",
+      "label": "show hundredths of seconds",
+      "type": "number"
+    },
+    {
+      "id": "time_unit",
+      "label": "Share this Calculation",
+      "type": "number"
+    }
+  ],
+  "declining-balance-depreciation-calculator": [
+    {
+      "id": "cost",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "salvage",
+      "label": "Asset Cost: $",
+      "type": "number"
+    },
+    {
+      "id": "life",
+      "label": "Salvage Value: $",
+      "type": "number"
+    },
+    {
+      "id": "factor",
+      "label": "Useful Life (years):",
+      "type": "number"
+    },
+    {
+      "id": "year",
+      "label": "Depreciation Factor:",
+      "type": "number"
+    },
+    {
+      "id": "dollars",
+      "label": "Month:",
+      "type": "number"
+    },
+    {
+      "id": "month",
+      "label": "Year:",
+      "type": "number"
+    },
+    {
+      "id": "fiscal",
+      "label": "Convention:",
+      "type": "number"
+    },
+    {
+      "id": "convention",
+      "label": "Round to Dollars:",
+      "type": "number"
+    },
+    {
+      "id": "ans",
+      "label": "Show:",
+      "type": "number"
+    }
+  ],
+  "deferred-fixed-annuity-calculator": [
+    {
+      "id": "principal",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "rate_percent[1]",
+      "label": "Initial Investment: $",
+      "type": "number"
+    },
+    {
+      "id": "rate_percent[2]",
+      "label": "Term in Years:",
+      "type": "number"
+    },
+    {
+      "id": "rate_percent[3]",
+      "label": "1",
+      "type": "number"
+    },
+    {
+      "id": "rate_percent[4]",
+      "label": "2",
+      "type": "number"
+    },
+    {
+      "id": "rate_percent[5]",
+      "label": "3",
+      "type": "number"
+    },
+    {
+      "id": "pretax",
+      "label": "4",
+      "type": "number"
+    },
+    {
+      "id": "rate_percent[tax]",
+      "label": "5",
+      "type": "number"
+    },
+    {
+      "id": "year_count",
+      "label": "Compounding",
+      "type": "number"
+    },
+    {
+      "id": "n",
+      "label": "Investment is Pre-tax:",
+      "type": "number"
+    }
+  ],
+  "density-physics": [
+    {
+      "id": "m",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "v",
+      "label": "V&nbsp;=",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Significant Figures",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "p_units",
+      "label": "p_units",
+      "type": "number"
+    },
+    {
+      "id": "m_units",
+      "label": "m_units",
+      "type": "number"
+    },
+    {
+      "id": "v_units",
+      "label": "v_units",
+      "type": "number"
+    },
+    {
+      "id": "sf",
+      "label": "sf",
+      "type": "number"
+    }
+  ],
+  "density-conversion-calculator": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "input",
+      "label": "From:",
+      "type": "number"
+    },
+    {
+      "id": "output",
+      "label": "To:",
+      "type": "number"
+    }
+  ],
+  "depreciation-calculator": [
+    {
+      "id": "cost",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "salvage",
+      "label": "Asset cost: $",
+      "type": "number"
+    },
+    {
+      "id": "life",
+      "label": "Salvage value: $",
+      "type": "number"
+    },
+    {
+      "id": "year",
+      "label": "Useful life (years):",
+      "type": "number"
+    },
+    {
+      "id": "dollars",
+      "label": "Month:",
+      "type": "number"
+    },
+    {
+      "id": "given_data_last",
+      "label": "Year:",
+      "type": "number"
+    },
+    {
+      "id": "given_data",
+      "label": "Convention:",
+      "type": "number"
+    },
+    {
+      "id": "month",
+      "label": "Round to Dollars:",
+      "type": "number"
+    },
+    {
+      "id": "fiscal",
+      "label": "Show:",
+      "type": "number"
+    },
+    {
+      "id": "convention",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "ans",
+      "label": "ans",
+      "type": "number"
+    }
+  ],
+  "descriptive-statistics-calculator": [
+    {
+      "id": "pop",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "pop",
+      "label": "Sample",
+      "type": "number"
+    }
+  ],
+  "square-feet-to-acres": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "square-feet-to-square-meters": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "square-meters-to-square-feet": [
+    {
+      "id": "input_value",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "diamond-problem-solver": [
+    {
+      "id": "product",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "factor1",
+      "label": "Share this Calculation",
+      "type": "number"
+    },
+    {
+      "id": "factor2",
+      "label": "factor2",
+      "type": "number"
+    },
+    {
+      "id": "sum",
+      "label": "sum",
+      "type": "number"
+    }
+  ],
+  "dice-roller": [
+    {
+      "id": "num_dice",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "difference-of-two-squares-calculator": [
+    {
+      "id": "x",
+      "label": "Search",
+      "type": "number"
+    }
+  ],
+  "digital-stopwatch-timer": [
+    {
+      "id": "time",
+      "label": "Search",
+      "type": "number"
+    },
+    {
+      "id": "time_print",
+      "label": "mm:ss.s",
+      "type": "number"
+    },
+    {
+      "id": "operand",
+      "label": "operand",
+      "type": "number"
+    },
+    {
+      "id": "operator",
+      "label": "operator",
+      "type": "number"
+    }
+  ]
+}
