@@ -3,7 +3,7 @@ import { Calculator } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="border-t bg-muted/40 mt-16">
+    <footer className="w-full border-t border-gray-300 dark:border-transparent bg-muted/40">
       <div className="container mx-auto px-4 py-12 md:py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4 md:col-span-1">
@@ -12,7 +12,7 @@ export function Footer() {
               <span className="font-bold text-xl">MathCalc</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Your all-in-one destination for over 200+ free online calculators and tools. Fast, accurate, and easy to use.
+              Your trusted destination for essential free online calculators and tools. Fast, accurate, and easy to use.
             </p>
           </div>
           
@@ -47,7 +47,7 @@ export function Footer() {
           </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t flex flex-col md:flex-row items-center justify-between text-sm text-muted-foreground">
+        <div className="mt-12 pt-8 border-t border-gray-300 dark:border-white/10 flex flex-col md:flex-row items-center justify-between text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} MathCalc. All rights reserved.</p>
           <p className="mt-4 md:mt-0">Made for everyday calculations.</p>
         </div>

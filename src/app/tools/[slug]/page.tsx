@@ -50,6 +50,32 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
   // @ts-expect-error - Dynamic icon lookup
   const Icon = Icons[iconName] || Icons.Calculator;
 
+  // Dynamic Text Setup
+  const isGenerator = tool.slug.includes("generator");
+  const isStarter = tool.slug.includes("stopwatch") || tool.slug.includes("timer");
+  const isRoller = tool.slug.includes("dice");
+  const isFlipper = tool.slug.includes("coin");
+  const isSpinner = tool.slug.includes("lottery") || tool.slug.includes("spinner");
+  
+  let actionVerb = "Calculate";
+  if (isGenerator) actionVerb = "Generate";
+  else if (isStarter) actionVerb = "Start";
+  else if (isRoller) actionVerb = "Roll";
+  else if (isFlipper) actionVerb = "Flip";
+  else if (isSpinner) actionVerb = "Spin";
+
+  let aboutGoal = "make a quick calculation";
+  if (isGenerator) aboutGoal = "generate what you need efficiently";
+  else if (isStarter) aboutGoal = "track time accurately";
+  else if (isRoller) aboutGoal = "roll virtual dice";
+  else if (isFlipper) aboutGoal = "flip a virtual coin";
+  else if (isSpinner) aboutGoal = "draw random numbers";
+
+  let howToUseInstruction = `Simply enter your values or select your preferences in the fields above. The results will update automatically or when you press the "${actionVerb}" button.`;
+  if (isStarter || isRoller || isFlipper || isSpinner) {
+    howToUseInstruction = `Simply interact with the tool above and press the "${actionVerb}" button to begin.`;
+  }
+
   // Determine which component to render
   let BespokeComponent: React.ComponentType | null = null;
   
@@ -66,8 +92,29 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
     );
   }
 
+  // Generate JSON-LD for FAQs
+  const jsonLd = tool.seoContent?.faqs && tool.seoContent.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: tool.seoContent.faqs.map(faq => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a
+      }
+    }))
+  } : null;
+
   return (
-    <div className="container mx-auto px-4 py-8 md:py-12">
+    <>
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
+      <div className="container mx-auto px-4 py-8 md:py-12">
       <Breadcrumb className="mb-8">
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -112,9 +159,7 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
               About {tool.name}
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              This {tool.name.toLowerCase()} is designed to provide quick and accurate results. 
-              Whether you&apos;re a student, professional, or just need to make a quick calculation, 
-              our tool is here to help.
+              {tool.seoContent?.about || `This ${tool.name.toLowerCase()} is designed to provide quick, accurate, and reliable results. Whether you're a student, professional, or just need to ${aboutGoal}, our tool is here to help.`}
             </p>
             {/* AdSense placeholder */}
             <div className="w-full h-32 bg-muted/20 border-2 border-dashed border-primary/20 rounded-2xl flex flex-col items-center justify-center text-muted-foreground text-sm my-10">
@@ -123,9 +168,22 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
             </div>
             <h4 className="text-xl font-bold mt-8">How to use</h4>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Simply enter your values into the input fields above and the calculator will automatically 
-              compute the results. Some calculators may require you to press a &quot;Calculate&quot; button.
+              {tool.seoContent?.howToUse || howToUseInstruction}
             </p>
+            
+            {tool.seoContent?.faqs && tool.seoContent.faqs.length > 0 && (
+              <div className="mt-12">
+                <h4 className="text-2xl font-bold mb-6">Frequently Asked Questions</h4>
+                <div className="space-y-4">
+                  {tool.seoContent.faqs.map((faq, idx) => (
+                    <div key={idx} className="bg-background/40 p-6 rounded-2xl border border-foreground/10">
+                      <h5 className="text-lg font-bold text-foreground mb-2">{faq.q}</h5>
+                      <p className="text-muted-foreground leading-relaxed">{faq.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
@@ -144,6 +202,6 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -37,11 +37,11 @@ export default function Home() {
       {/* Hero Section */}
       <section className="w-full pt-28 pb-20 md:pt-40 md:pb-32 flex flex-col items-center text-center px-4 relative z-10">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 max-w-4xl text-foreground !leading-tight">
-          Innovating <span className="text-primary">Calculations.</span><br />
-          Building Today.
+          Essential <span className="text-primary">Calculators.</span><br />
+          Everyday Solutions.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl font-medium">
-          Empowering your daily tasks with next-gen mathematical tools and specialized calculators. Fast, precise, and beautifully designed.
+          A carefully curated selection of high-quality calculators for your daily needs. Fast, precise, and beautifully designed.
         </p>
         <div className="w-full flex justify-center scale-100 md:scale-110 shadow-2xl rounded-lg">
           <SearchBar />
@@ -60,7 +60,7 @@ export default function Home() {
       <section className="w-full py-16 md:py-24 container mx-auto px-4 z-10 relative">
         <div className="flex flex-col items-center mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Most Popular Tools</h2>
-          <p className="text-primary mt-3 font-medium">We don&apos;t just calculate; we deliver results that work.</p>
+          <p className="text-primary mt-3 font-medium">Our most frequently used calculators.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {popularTools.map((tool) => (
@@ -70,11 +70,11 @@ export default function Home() {
       </section>
 
       {/* Category Grid Section */}
-      <section id="categories" className="w-full py-16 md:py-24 border-t border-primary/10 bg-gradient-to-b from-background to-primary/5 z-10 relative">
+      <section id="categories" className="w-full pt-16 md:pt-24 pb-16 md:pb-24 border-t border-foreground/10 dark:border-transparent bg-gradient-to-b from-background to-primary/5 z-10 relative">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center mb-12 text-center">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Browse by Category</h2>
-            <p className="text-muted-foreground mt-3 font-medium">Explore how we&apos;ve categorized tools to help you innovate.</p>
+            <p className="text-muted-foreground mt-3 font-medium">Find the exact tool you need from our growing collection.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {categories.map((category) => {
@@ -84,6 +84,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
     </div>
   );
 }

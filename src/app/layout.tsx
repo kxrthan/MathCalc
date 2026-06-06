@@ -8,8 +8,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MathCalc - 200+ Free Online Calculators",
-  description: "The ultimate collection of free online calculators for math, finance, health, and more.",
+  title: "MathCalc - Essential Free Online Calculators",
+  description: "A curated collection of precise, fast, and free online calculators for math, finance, health, and everyday needs.",
 };
 
 export const viewport = {

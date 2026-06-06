@@ -13,4 +13,9 @@ export interface Tool {
   tags?: string[];
   component?: string;
   relatedTools?: string[];
+  seoContent?: {
+    about?: string;
+    howToUse?: string;
+    faqs?: { q: string; a: string }[];
+  };
 }
