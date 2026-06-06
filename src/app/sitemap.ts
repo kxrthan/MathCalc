@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { categories, tools } from '@/lib/tools-registry';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://mathcalc-demo.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.realcalculatortools.com';
   
   const toolUrls = tools.map((tool) => ({
     url: `${baseUrl}/tools/${tool.slug}`,
