@@ -3,7 +3,7 @@ import { ToolCard } from "@/components/ToolCard";
 import { notFound } from "next/navigation";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Metadata } from "next";
-import * as Icons from "lucide-react";
+import { CategoryIcon } from "@/components/IconRenderer";
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const category = categories.find((c) => c.slug === params.slug);
@@ -26,10 +26,6 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   }
 
   const categoryTools = tools.filter((t) => t.category === category.slug);
-  
-  const iconName = category.icon.split('-').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join('');
-  // @ts-expect-error - Dynamic icon name lookup
-  const Icon = Icons[iconName] || Icons.Calculator;
 
   return (
     <div className="container mx-auto px-4 py-8 md:py-12">
@@ -47,7 +43,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
 
       <div className="flex items-center space-x-4 mb-8">
         <div className="p-4 bg-primary/10 rounded-xl">
-          <Icon className="w-10 h-10 text-primary" />
+          <CategoryIcon name={category.icon} className="w-10 h-10 text-primary" />
         </div>
         <div>
           <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{category.name} Calculators</h1>

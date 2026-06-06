@@ -6,9 +6,9 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Skeleton } from "@/components/ui/skeleton";
+import { CategoryIcon } from '@/components/IconRenderer';
 import DynamicCalculator from "@/components/calculators/DynamicCalculator";
 import StubCalculator from "@/components/calculators/StubCalculator";
-import * as Icons from 'lucide-react';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const tool = tools.find((t) => t.slug === params.slug);
@@ -44,11 +44,21 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
     relatedTools = tools.filter(t => t.category === tool.category && t.slug !== tool.slug).slice(0, 4);
   }
 
-  // Dynamic Icon
-  const iconStr = category?.icon || "calculator";
-  const iconName = iconStr.split('-').map(p => p.charAt(0).toUpperCase() + p.slice(1)).join('');
-  // @ts-expect-error - Dynamic icon lookup
-  const Icon = Icons[iconName] || Icons.Calculator;
+  // Determine which component to render
+  let BespokeComponent: React.ComponentType | null = null;
+  
+  if (!formulas[tool.slug]) {
+    // try to load a bespoke component, and fallback to Stub if it fails
+    BespokeComponent = dynamic(
+      () => import(`@/components/calculators/${tool.category}/${tool.component}`).catch(() => {
+        return function Fallback() { return <StubCalculator toolName={tool.name} />; };
+      }),
+      { 
+        loading: () => <CalculatorSkeleton />,
+        ssr: false 
+      }
+    );
+  }
 
   // Dynamic Text Setup
   const isGenerator = tool.slug.includes("generator");
@@ -76,22 +86,6 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
     howToUseInstruction = `Simply interact with the tool above and press the "${actionVerb}" button to begin.`;
   }
 
-  // Determine which component to render
-  let BespokeComponent: React.ComponentType | null = null;
-  
-  if (!formulas[tool.slug]) {
-    // try to load a bespoke component, and fallback to Stub if it fails
-    BespokeComponent = dynamic(
-      () => import(`@/components/calculators/${tool.category}/${tool.component}`).catch(() => {
-        return function Fallback() { return <StubCalculator toolName={tool.name} />; };
-      }),
-      { 
-        loading: () => <CalculatorSkeleton />,
-        ssr: false 
-      }
-    );
-  }
-
   // Generate JSON-LD for FAQs
   const jsonLd = tool.seoContent?.faqs && tool.seoContent.faqs.length > 0 ? {
     "@context": "https://schema.org",
@@ -107,14 +101,13 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
   } : null;
 
   return (
-    <>
+    <div className="container mx-auto px-4 py-8 md:py-12">
       {jsonLd && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       )}
-      <div className="container mx-auto px-4 py-8 md:py-12">
       <Breadcrumb className="mb-8">
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -134,7 +127,7 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
       <div className="mb-10">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-foreground flex items-center gap-4">
           <span className="p-3 bg-primary/10 text-primary rounded-2xl">
-            <Icon className="w-8 h-8" />
+            <CategoryIcon name={category?.icon || 'calculator'} className="w-8 h-8" />
           </span>
           {tool.name}
         </h1>
@@ -202,6 +195,6 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
