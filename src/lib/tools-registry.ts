@@ -45,6 +45,19 @@ export const categories: Category[] = [
 
 export const tools: Tool[] = [
   {
+    "slug": "angle-conversion-calculator",
+    "name": "Angle Conversion Calculator",
+    "description": "Convert angles between degrees, radians, gradians, minutes, and seconds.",
+    "category": "conversion",
+    "component": "DynamicCalculator",
+    "seoContent": {
+      "about": "Our Angle Conversion Calculator allows you to quickly and accurately convert angles between different units.",
+      "howToUse": "Enter the value you want to convert, select the starting unit, and select the target unit. The result will be calculated automatically.",
+      "faqs": []
+    }
+  },
+  
+  {
     "slug": "basic-calculator",
     "name": "Basic Calculator",
     "description": "Standard calculator with standard operations.",
@@ -666,8 +679,8 @@ export const tools: Tool[] = [
     }
   },
   {
-    "slug": "sip-calculator",
-    "name": "SIP Calculator",
+    "slug": "investment-calculator",
+    "name": "Investment Calculator",
     "description": "Calculate SIP and Lumpsum investment returns.",
     "category": "finance",
     "seoContent": {
@@ -675,11 +688,11 @@ export const tools: Tool[] = [
       "howToUse": "Enter your financial figures into the appropriate fields. Double-check your numbers for the most accurate projection, then click \"Calculate\" to see your detailed breakdown.",
       "faqs": [
         {
-          "q": "Is the SIP Calculator free to use?",
-          "a": "Yes, our SIP Calculator is completely free to use online with no hidden fees or registrations required."
+          "q": "Is the Investment Calculator free to use?",
+          "a": "Yes, our Investment Calculator is completely free to use online with no hidden fees or registrations required."
         },
         {
-          "q": "Does this SIP Calculator provide financial advice?",
+          "q": "Does this Investment Calculator provide financial advice?",
           "a": "No, this tool provides estimates based on standard financial formulas for informational purposes only. Always consult a certified financial planner for official advice."
         }
       ]
@@ -706,9 +719,9 @@ export const tools: Tool[] = [
     }
   },
   {
-    "slug": "emi-calculator",
-    "name": "EMI Calculator",
-    "description": "Calculate Equated Monthly Installment for loans.",
+    "slug": "loan-payment-calculator",
+    "name": "Loan Payment Calculator",
+    "description": "Calculate monthly EMI, total interest, and total payment for a loan.",
     "category": "finance",
     "seoContent": {
       "about": "Make informed financial decisions with our free EMI Calculator. Designed to help you calculate equated monthly installment for loans., this calculator takes the guesswork out of your personal or business finances.",
@@ -1145,6 +1158,39 @@ export const tools: Tool[] = [
         {
           "q": "Is the Lottery Number Generator free to use?",
           "a": "Yes, our Lottery Number Generator is completely free to use online with no hidden fees or registrations required."
+        }
+      ]
+    }
+  },
+  {
+    "slug": "tip-calculator",
+    "name": "Tip Calculator",
+    "description": "Calculate tip amount, total bill, and split evenly between people. The fastest way to tip at restaurants.",
+    "category": "finance",
+    "relatedTools": ["sales-tax-calculator", "discount-calculator", "mortgage-calculator"],
+    "seoContent": {
+      "about": "Our free Tip Calculator is the easiest way to figure out how much to tip at a restaurant, bar, hotel, or any service. Enter your bill amount, choose a tip percentage (10%–30%), and instantly see the tip amount, total bill, and how much each person owes when splitting the check. No math needed.",
+      "howToUse": "Enter your total bill amount before tax, select a tip percentage based on your service experience, and enter the number of people splitting the bill. The calculator instantly shows your tip amount, total bill, and per-person share.",
+      "faqs": [
+        {
+          "q": "How much should I tip at a restaurant in the US?",
+          "a": "In the US, the standard tip is 15–20% for sit-down restaurant service. 10% is generally for poor service, 15% for average, 18–20% for good service, and 25%+ for excellent or exceptional service."
+        },
+        {
+          "q": "Do you tip on the pre-tax or post-tax amount?",
+          "a": "Etiquette varies, but most Americans tip on the pre-tax subtotal. However, tipping on the total (including tax) is also acceptable, especially in states with high sales tax."
+        },
+        {
+          "q": "How do I split the bill evenly at a restaurant?",
+          "a": "Enter the total bill, select your tip percentage, then enter the number of people in the 'Split Between' field. Our calculator instantly shows the per-person total, including tip."
+        },
+        {
+          "q": "What is the standard tip for food delivery?",
+          "a": "For food delivery in the US, 15–20% is recommended. For large orders or difficult weather conditions, consider 20–25%. A minimum of $3–5 for small orders is considered courteous."
+        },
+        {
+          "q": "Should I tip on a takeout order?",
+          "a": "Tipping on takeout is optional but appreciated. A 10–15% tip for takeout orders is considered generous and supports restaurant staff who prepared your food."
         }
       ]
     }

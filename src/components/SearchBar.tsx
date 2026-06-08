@@ -17,6 +17,8 @@ export function SearchBar() {
         tools.filter(
           (t) =>
             t.name.toLowerCase().includes(q.toLowerCase()) ||
+            t.description.toLowerCase().includes(q.toLowerCase()) ||
+            t.category.toLowerCase().includes(q.toLowerCase()) ||
             t.tags?.some((tag) => tag.includes(q.toLowerCase()))
         ).slice(0, 8)
       );

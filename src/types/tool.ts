@@ -13,6 +13,8 @@ export interface Tool {
   tags?: string[];
   component?: string;
   relatedTools?: string[];
+  seoTitle?: string;
+  seoDescription?: string;
   seoContent?: {
     about?: string;
     howToUse?: string;

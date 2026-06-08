@@ -320,8 +320,8 @@ export const formulas: Record<string, FormulaConfig> = {
   },
 
   // --- FINANCE TOOLS WITH CHARTS ---
-  "sip-calculator": {
-    slug: "sip-calculator",
+  "investment-calculator": {
+    slug: "investment-calculator",
     inputs: [
       { id: "currency", label: "Currency", type: "select", defaultValue: "INR", options: currencyOptions },
       { id: "type", label: "Investment Type", type: "toggle", defaultValue: "sip", options: [
@@ -445,8 +445,8 @@ export const formulas: Record<string, FormulaConfig> = {
       return { p, monthly, totalInterest: totalPayment - p, totalPayment };
     }
   },
-  "emi-calculator": {
-    slug: "emi-calculator",
+  "loan-payment-calculator": {
+    slug: "loan-payment-calculator",
     inputs: [
       { id: "currency", label: "Currency", type: "select", defaultValue: "INR", options: currencyOptions },
       { id: "p", label: "Loan Amount", type: "number", defaultValue: "500000" },
@@ -1396,5 +1396,144 @@ export const formulas: Record<string, FormulaConfig> = {
         decimal: d1 / d2
       };
     }
-  }
+  },
+  "tip-calculator": {
+    slug: "tip-calculator",
+    inputs: [
+      { id: "currency", label: "Currency", type: "select", defaultValue: "USD", options: currencyOptions },
+      { id: "bill", label: "Bill Amount", type: "number", defaultValue: "50" },
+      { id: "tipPercent", label: "Tip Percentage (%)", type: "number", defaultValue: "18" },
+      { id: "people", label: "Split Between (people)", type: "number", defaultValue: "1" }
+    ],
+    outputs: [
+      { id: "tipAmount", label: "Total Tip", format: "currency" },
+      { id: "totalAmount", label: "Total Bill (with Tip)", format: "currency" },
+      { id: "perPerson", label: "Total Per Person", format: "currency" },
+      { id: "tipPerPerson", label: "Tip Per Person", format: "currency" },
+      { id: "chart", label: "Bill vs Tip Breakdown", format: "chart", chartConfig: {
+        type: "doughnut",
+        series: [
+          { key: "bill", name: "Bill", color: "hsl(var(--chart-1))" },
+          { key: "tipAmount", name: "Tip", color: "hsl(var(--chart-2))" }
+        ]
+      }}
+    ],
+    calculate: (inputs) => {
+      const bill = Number(inputs.bill) || 0;
+      const percent = Number(inputs.tipPercent) || 18;
+      const people = Math.max(1, Number(inputs.people) || 1);
+      const tipAmount = bill * (percent / 100);
+      const totalAmount = bill + tipAmount;
+      return { bill, tipAmount, totalAmount, perPerson: totalAmount / people, tipPerPerson: tipAmount / people };
+    }
+  },
+  "401k-calculator": {
+    slug: "401k-calculator",
+    inputs: [
+      { id: "currency", label: "Currency", type: "select", defaultValue: "USD", options: currencyOptions },
+      { id: "currentBalance", label: "Current Balance", type: "number", defaultValue: "10000" },
+      { id: "salary", label: "Annual Salary", type: "number", defaultValue: "60000" },
+      { id: "contribution", label: "Your Contribution (%)", type: "number", defaultValue: "5" },
+      { id: "employerMatch", label: "Employer Match (%)", type: "number", defaultValue: "3" },
+      { id: "rate", label: "Annual Return (%)", type: "number", defaultValue: "7" },
+      { id: "years", label: "Years to Grow", type: "number", defaultValue: "30" }
+    ],
+    outputs: [
+      { id: "total", label: "Total Savings", format: "currency" },
+      { id: "chart", label: "Growth Over Time", format: "chart", chartConfig: {
+        type: "line",
+        xAxisKey: "year",
+        series: [
+          { key: "total", name: "Total Value", color: "hsl(var(--chart-2))" }
+        ]
+      }}
+    ],
+    calculate: (inputs) => {
+      let balance = Number(inputs.currentBalance) || 0;
+      const salary = Number(inputs.salary) || 0;
+      const contrib = (Number(inputs.contribution) || 0) / 100;
+      const match = (Number(inputs.employerMatch) || 0) / 100;
+      const rate = (Number(inputs.rate) || 0) / 100;
+      const years = Number(inputs.years) || 0;
+      
+      const annualAdd = salary * contrib + salary * Math.min(contrib, match);
+      const timeline = [];
+      
+      for(let y=1; y<=years; y++) {
+        balance = balance * (1 + rate) + annualAdd;
+        timeline.push({ year: `Year ${y}`, total: balance });
+      }
+      return { total: balance, timeline };
+    }
+  },
+  "paycheck-calculator": {
+    slug: "paycheck-calculator",
+    inputs: [
+      { id: "currency", label: "Currency", type: "select", defaultValue: "USD", options: currencyOptions },
+      { id: "salary", label: "Gross Salary", type: "number", defaultValue: "60000" },
+      { id: "frequency", label: "Pay Frequency", type: "select", defaultValue: "26", options: [
+        { value: "52", label: "Weekly" },
+        { value: "26", label: "Bi-Weekly" },
+        { value: "24", label: "Semi-Monthly" },
+        { value: "12", label: "Monthly" }
+      ]},
+      { id: "taxRate", label: "Est. Tax Rate (%)", type: "number", defaultValue: "22" }
+    ],
+    outputs: [
+      { id: "gross", label: "Gross Per Paycheck", format: "currency" },
+      { id: "tax", label: "Taxes Per Paycheck", format: "currency" },
+      { id: "net", label: "Net Take-Home Pay", format: "currency" }
+    ],
+    calculate: (inputs) => {
+      const salary = Number(inputs.salary) || 0;
+      const freq = Number(inputs.frequency) || 26;
+      const taxRate = (Number(inputs.taxRate) || 0) / 100;
+      const gross = salary / freq;
+      const tax = gross * taxRate;
+      const net = gross - tax;
+      return { gross, tax, net };
+    }
+  },
+
+  "angle-conversion-calculator": {
+    slug: "angle-conversion-calculator",
+    inputs: [
+      { id: "val", label: "Value", type: "number", defaultValue: "180" },
+      { id: "input", label: "From", type: "select", defaultValue: "degree", options: [
+        { value: "degree", label: "Degree" },
+        { value: "radian", label: "Radian" },
+        { value: "gradian", label: "Gradian" },
+        { value: "minute", label: "Minute of arc" },
+        { value: "second", label: "Second of arc" }
+      ]},
+      { id: "output", label: "To", type: "select", defaultValue: "radian", options: [
+        { value: "degree", label: "Degree" },
+        { value: "radian", label: "Radian" },
+        { value: "gradian", label: "Gradian" },
+        { value: "minute", label: "Minute of arc" },
+        { value: "second", label: "Second of arc" }
+      ]}
+    ],
+    outputs: [{ id: "res", label: "Result", format: "number" }],
+    calculate: (inputs) => {
+      const val = Number(inputs.val);
+      if (isNaN(val)) return { res: null };
+      
+      // Convert to degrees first
+      let deg = val;
+      if (inputs.input === "radian") deg = val * (180 / Math.PI);
+      else if (inputs.input === "gradian") deg = val * 0.9;
+      else if (inputs.input === "minute") deg = val / 60;
+      else if (inputs.input === "second") deg = val / 3600;
+      
+      // Convert from degrees to target
+      let res = deg;
+      if (inputs.output === "radian") res = deg * (Math.PI / 180);
+      else if (inputs.output === "gradian") res = deg / 0.9;
+      else if (inputs.output === "minute") res = deg * 60;
+      else if (inputs.output === "second") res = deg * 3600;
+      
+      return { res };
+    }
+  },
 };

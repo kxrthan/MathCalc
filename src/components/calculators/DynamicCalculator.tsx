@@ -11,6 +11,9 @@ import { cn } from "@/lib/utils";
 import DoughnutChart from "./charts/DoughnutChart";
 import LineChart from "./charts/LineChart";
 import GaugeChart from "./charts/GaugeChart";
+import dynamic from "next/dynamic";
+
+const MortgageAffiliateCTA = dynamic(() => import("./finance/MortgageAffiliateCTA"), { ssr: false });
 
 
 function AutocompleteInput({ 
@@ -365,6 +368,14 @@ export default function DynamicCalculator({ slug }: { slug: string }) {
             <p className="text-xl font-medium text-foreground text-center">Ready to {actionVerb.toLowerCase()}</p>
             <p className="text-muted-foreground text-center mt-2 max-w-sm font-medium">Fill in your details on the left and hit {actionVerb.toLowerCase()} to see your interactive results.</p>
           </div>
+        )}
+
+        {/* Mortgage Affiliate CTA — shown below results for mortgage calculator only */}
+        {results && slug === "mortgage-calculator" && (
+          <MortgageAffiliateCTA
+            monthlyPayment={`$${Number(results.monthly || 0).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`}
+            interestRate={inputs.r || "5"}
+          />
         )}
       </div>
     </div>

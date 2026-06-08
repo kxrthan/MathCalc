@@ -1,5 +1,5 @@
 import { categories, tools } from "@/lib/tools-registry";
-import { formulas } from "@/lib/formulas";
+import { formulas } from "@/lib/formulas"; // force rebuild
 import { ToolCard } from "@/components/ToolCard";
 import { notFound } from "next/navigation";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
@@ -35,6 +35,9 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
   }
 
   const category = categories.find((c) => c.slug === tool.category);
+  if (!category) {
+    notFound();
+  }
   
   // Find related tools (either explicitly defined or from same category)
   let relatedTools = [];

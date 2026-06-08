@@ -30,6 +30,9 @@ export function Navbar() {
           <Link href="/category/health">
             <Button variant="ghost" className="hidden sm:inline-flex">Health</Button>
           </Link>
+          <Link href="/blog">
+            <Button variant="ghost" className="hidden sm:inline-flex font-bold text-primary">Blog</Button>
+          </Link>
           <Link href="/#categories">
             <Button variant="default">All Tools</Button>
           </Link>

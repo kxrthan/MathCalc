@@ -22,7 +22,7 @@ export function Footer() {
               <li><Link href="/category/math" className="hover:text-primary">Math Calculators</Link></li>
               <li><Link href="/category/finance" className="hover:text-primary">Financial Calculators</Link></li>
               <li><Link href="/category/health" className="hover:text-primary">Health & Fitness</Link></li>
-              <li><Link href="/category/percent" className="hover:text-primary">Percentage Calculators</Link></li>
+              <li><Link href="/category/conversion" className="hover:text-primary">Unit Converters</Link></li>
             </ul>
           </div>
 
@@ -30,15 +30,16 @@ export function Footer() {
             <h3 className="font-medium text-foreground mb-4">Popular Tools</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link href="/tools/bmi-calculator" className="hover:text-primary">BMI Calculator</Link></li>
-              <li><Link href="/tools/compound-interest" className="hover:text-primary">Compound Interest</Link></li>
-              <li><Link href="/tools/percentage" className="hover:text-primary">Percentage Calculator</Link></li>
-              <li><Link href="/tools/loan" className="hover:text-primary">Loan Calculator</Link></li>
+              <li><Link href="/tools/compound-interest-calculator" className="hover:text-primary">Compound Interest</Link></li>
+              <li><Link href="/tools/percentage-calculator" className="hover:text-primary">Percentage Calculator</Link></li>
+              <li><Link href="/tools/mortgage-calculator" className="hover:text-primary">Mortgage Calculator</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-medium text-foreground mb-4">Legal</h3>
+            <h3 className="font-medium text-foreground mb-4">Company & Legal</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
+              <li><Link href="/blog" className="hover:text-primary text-primary font-medium">Read our Blog</Link></li>
               <li><Link href="/about" className="hover:text-primary">About Us</Link></li>
               <li><Link href="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
               <li><Link href="/terms" className="hover:text-primary">Terms of Service</Link></li>

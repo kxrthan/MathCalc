@@ -8,15 +8,27 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MathCalc - Essential Free Online Calculators",
-  description: "A curated collection of precise, fast, and free online calculators for math, finance, health, and everyday needs.",
+  title: "MathCalc - Free Online Calculators for Math, Finance & More",
+  description: "A curated collection of precise, fast, and free online calculators for math, finance, health, and everyday needs. Used by millions in the US.",
+  openGraph: {
+    title: "MathCalc - Free Online Calculators",
+    description: "Precise, fast, and free online calculators for math, finance, health, and everyday needs.",
+    type: "website",
+    locale: "en_US",
+    siteName: "MathCalc",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MathCalc - Free Online Calculators",
+    description: "Precise, fast, and free online calculators for math, finance, health, and everyday needs.",
+  },
 };
 
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({

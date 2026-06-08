@@ -13,7 +13,7 @@ export default function PrivacyPage() {
           Privacy <span className="text-primary">Policy</span>
         </h1>
         <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground leading-relaxed">
-          <p><strong>Effective Date:</strong> {new Date().toLocaleDateString()}</p>
+          <p><strong>Effective Date:</strong> June 1, 2026</p>
           <p>
             At MathCalc, your privacy is our top priority. This Privacy Policy details what information we collect, how it is used, and the security measures we employ. 
             Because our calculators are built to run directly within your web browser (client-side), your calculation data is inherently secure.

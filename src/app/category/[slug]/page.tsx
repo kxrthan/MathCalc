@@ -9,9 +9,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const category = categories.find((c) => c.slug === params.slug);
   if (!category) return {};
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.realcalculatortools.com';
+
   return {
-    title: `${category.name} Calculators & Tools - MathCalc`,
+    title: `${category.name} Calculators & Tools | MathCalc`,
     description: `Free online ${category.name.toLowerCase()} calculators and tools. ${tools.filter(t => t.category === category.slug).length} tools available.`,
+    alternates: {
+      canonical: `${baseUrl}/category/${category.slug}`,
+    },
   };
 }
 
